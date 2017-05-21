@@ -19,7 +19,7 @@ body{
 width:100%;
 
 }
-.main .navigation-wrap,.main .services-wrap{
+.main .navigation-wrap,.main .services-wrap,.main .description-wrap{
 	width: 100%;
 
 }
@@ -71,14 +71,20 @@ width: 1347px;
 
 .main .hero-wrap{
 width: 100%;
-height: 643px;
-background: url("images/bg55.jpg") no-repeat center;
+height: auto;
+}
+
+.hero{
+    width: 1349px;
+    height: 643px;
+    background: url("images/bg55.jpg") no-repeat center;   
+    margin: 0px auto 0px;
+    border: 1px solid;
 }
 
 .hero-heading{
     width: 451px;
-    /* margin: 0px auto 0px; */
-    margin-top: 3px;
+    margin-top: 105px;
     padding-left: 25px;
     margin-left: 299px;
     font-size: 30px;
@@ -88,9 +94,9 @@ background: url("images/bg55.jpg") no-repeat center;
 }
 
 .services-wrap .services{
-width: 1084px;
+width: 1114px;
     margin: 0px auto;
-    height: 415px;
+    height: 565px;
     overflow: auto;
 
 }
@@ -98,11 +104,63 @@ width: 1084px;
 .services-heading{
 margin: 100px auto 0px;
     font-size: 30px;
-    width: 89px;
+    width: 216px;
     font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.row-1,.row-2{
+    width: 1084px;
+}
+
+.row-1-box,.row-2-box{
+	    width: 360px;
+    height: 211px;
+    float: left;
+}
+
+.description-wrap .description{
+width: 1114px;
+    margin: 0px auto;
+    height: 565px;
+    overflow: auto;
+
+}
+
+.row{
+    width: 1349px;
+    margin: 0px auto;
+}
+
+.col-md1-6{
+    width: 674px;
+    height: 363px;
+    background: url("images/middle.jpg") no-repeat center;
+    float: left;
+}
+
+.col-md2-6{
+    width: 674px;
+    height: 363px;
+    float: left;
+    background-color: #519ade;
 }
 
 
+.sec-1{
+    color: #fff;
+    margin-left: 28px;
+    margin-top: 42px;
+    width: 614px;
+    font-size: 18px;
+}
+
+#sec-1{
+margin-top: 22px;
+    margin-left: 28px;
+    margin-right: 117px;
+    color: #fff;
+}
 </style>
 
 <body>
@@ -131,25 +189,48 @@ margin: 100px auto 0px;
 		</section>
 	</section>
 
-	<section class="hero-wrap">		
-		<header class="hero-heading">EDUCATION WITH TECHNOLOGIES</header>	
+	<section class="hero-wrap">
+    	<section class="hero">
+            <header class="hero-heading">EDUCATION WITH TECHNOLOGIES</header>       
+        </section>	
 	</section>
 
 	<section class="services-wrap">
 		<section class="services">
 			<header class="services-heading">SERVICES</header>
-			<div class="row">
-			</div>
+			<section class="row-1">
+				<section class="row-1-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+				<section class="row-1-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+				<section class="row-1-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+			</section>
+			<section class="row-2">
+				<section class="row-2-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+				<section class="row-2-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</section>
+				<section class="row-2-box">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+			</section>	
 		</section>	
 	</section>
+
+    <section class="description-wrap">
+            <div class="row">
+                    <div class="col-md1-6"></div>
+                    <div class="col-md2-6">
+                        
+                        <header class="sec-1">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</header>
+                            
+                            <section id='sec-1'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</section>
+
+                    </div>   
+            </div>
+        </section>
+    </section>
+
+
 
 </section>
 
  
 
 </body>
-
-
-
 
 </html>
