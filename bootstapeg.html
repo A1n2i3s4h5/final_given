@@ -83,15 +83,39 @@ height: auto;
 }
 
 .hero-heading{
-    width: 451px;
-    margin-top: 105px;
-    padding-left: 25px;
-    margin-left: 299px;
+ width: 709px;
+    margin-top: 285px;
+    padding-left: 21px;
+    padding-bottom: 7px;
+    padding-top: 25px;
+    margin-left: 181px;
     font-size: 30px;
     color: #fff;
+    float: left;
     letter-spacing: 7px;
     background-color: rgba(0, 0, 0, 0.18);
 }
+
+.form-login{
+    width: 374px;
+    height: 433px;
+    float: right;
+    margin-right: 31px;
+    margin-top: 39px;
+    background-color: #C0C0C0;
+}
+
+.login-head{
+width: auto;
+    background-color: #808080;
+    padding-top: 6px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 39px;
+    color: #fff;
+    margin-top: 0px;
+}
+
 
 .services-wrap .services{
 width: 1114px;
@@ -176,21 +200,26 @@ margin: 108px auto 0px;
     font-weight: bold;
 }
 
-.btn{
-    border-radius: 0px;
-    padding: 6px 29px;
-}
-
-.btn-default {
-    color: #fff;
-    margin: 240px 0px 0px 462px;
-    background-color: #B22222;
-}
-
 .main .footer-wrap{
     background-color: #8a8a89;
 }
 
+.admin-now{
+    width: 190px;
+    color: #fff;
+    margin: 240px 0px 0px 462px
+}
+
+.admin-now a{
+    text-decoration: none;
+    background-color: #B22222;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 38px 28px 31px;
+    display: inline-block;
+    text-align: center;
+}
 .footer-wrap .footer{
 width: 1114px;
     margin: 0px auto;
@@ -232,7 +261,14 @@ width: 1114px;
 
 	<section class="hero-wrap">
     	<section class="hero">
-            <header class="hero-heading">EDUCATION WITH TECHNOLOGIES</header>       
+              <header class="hero-heading">EDUCATION WITH TECHNOLOGIES</header>       
+              <form class="form-login">
+              <h4 class="login-head">Login</h4>
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+              <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe">I agree with terms and conditions
+              </form>
         </section>	
 	</section>
 
@@ -268,7 +304,7 @@ width: 1114px;
         <section class="last-wrap">
             <section class="last">
                 <header class="last-heading">PLAY,EXPLORE AND LEARN.</header>       
-                <button type="button" class="btn btn-default">ADMISSION NOW</button>
+                <section class="admin-now"><a href="#">ADMISSION NOW</a></section>   
             </section>
         </section>
 
@@ -277,7 +313,6 @@ width: 1114px;
                     <section id="footer-cnt">2017 North American Photon Infotech Limited.|www.photon.in
                         <img src="images/social-icon.png"></img>
                     </section>
-                    <section class="footer-image">      </section>
             </section>
         </section>
 
